@@ -1,0 +1,43 @@
+server:
+  port: 18085
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.168:3306/guli_oms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+  redis:
+    host: 192.168.0.168
+  zipkin:
+    base-url: http://localhost:9411
+    discovery-client-enabled: false
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
+mybatis-plus:
+  mapper-locations: classpath:mapper/pms/*.xml  # \uFFFD\uFFFD\u0221\u04F3\uFFFD\uFFFD\uFFFD\u013C\uFFFD
+  type-aliases-package: com.atguigu.gmall.pms.entity
+  global-config:
+    db-config:
+      id-type: auto  # \u012C\uFFFD\uFFFD\u02B9\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u077F\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD
+feign:
+  sentinel:
+    enabled: true
+debug: true
+
+
+logging:
+  level:
+    com.atguigu.gmall.pms: debug
+
+

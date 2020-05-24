@@ -1,5 +1,6 @@
 package com.atguigu.gmall.pms.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
@@ -20,9 +21,10 @@ public class SpuDescEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 商品id
+	 * 商品id <br>
+	 * spu_info_desc表的主键是spu_id,需要在实体类中配置该主键不是自增主键
 	 */
-	@TableId
+	@TableId(type = IdType.INPUT)
 	private Long spuId;
 	/**
 	 * 商品介绍

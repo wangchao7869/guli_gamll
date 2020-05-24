@@ -5,6 +5,7 @@ import com.atguigu.gmall.common.bean.PageResultVo;
 import com.atguigu.gmall.common.bean.PageParamVo;
 import com.atguigu.gmall.pms.entity.CategoryEntity;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,5 +18,12 @@ import java.util.Map;
 public interface CategoryService extends IService<CategoryEntity> {
 
     PageResultVo queryPage(PageParamVo paramVo);
+
+    /**
+     * 根据父id查询分类
+     * @param parentId -1：查询所有，0：查询一级节点
+     * @return
+     */
+    List<CategoryEntity> queryCategory(Long parentId);
 }
 

@@ -25,11 +25,11 @@ spring:
     sampler:
       probability: 1
 mybatis-plus:
-  mapper-locations: classpath:mapper/pms/*.xml  # ¶ÁÈ¡Ó³ÉäÎÄ¼ş
-  type-aliases-package: com.atguigu.gmall.pms.entity
+  mapper-locations: classpath:mapper/pms/*.xml  # ï¿½ï¿½È¡Ó³ï¿½ï¿½ï¿½Ä¼ï¿½
+  type-aliases-package: com.atguigu.gmall.ums.entity
   global-config:
     db-config:
-      id-type: auto  # Ä¬ÈÏÊ¹ÓÃÊı¾İ¿â×ÔÔö
+      id-type: auto  # Ä¬ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½ï¿½ï¿½
 feign:
   sentinel:
     enabled: true

@@ -1,10 +1,12 @@
 package com.atguigu.gmall.pms.service;
 
+import com.atguigu.gmall.pms.vo.SpuVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.gmall.common.bean.PageResultVo;
 import com.atguigu.gmall.common.bean.PageParamVo;
 import com.atguigu.gmall.pms.entity.SpuEntity;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,5 +19,20 @@ import java.util.Map;
 public interface SpuService extends IService<SpuEntity> {
 
     PageResultVo queryPage(PageParamVo paramVo);
+
+    /**
+     * 分页查询spu商品列表
+     * @param pageParamVo
+     * @param categoryId
+     * @return
+     */
+    PageResultVo querySpuInfo(PageParamVo pageParamVo, Long categoryId);
+
+    /**
+     * 保存
+     * @param spuVo
+     */
+    void bigSave(SpuVo spuVo);
+
 }
 

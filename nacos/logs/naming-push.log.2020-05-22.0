@@ -1,0 +1,124 @@
+2020-05-22 07:56:59,720 INFO DEFAULT_GROUP@@gateway-api is changed, add it to push queue.
+
+2020-05-22 07:57:21,927 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 07:57:23,476 INFO DEFAULT_GROUP@@wms-service is changed, add it to push queue.
+
+2020-05-22 07:57:31,070 INFO DEFAULT_GROUP@@ums-service is changed, add it to push queue.
+
+2020-05-22 08:11:27,305 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:11:27,307 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1142256054872
+
+2020-05-22 08:11:27,307 INFO send udp packet: 192.168.209.1,59773,1142256054872
+
+2020-05-22 08:11:27,324 INFO received ack: {"type": "push-ack", "lastRefTime":"1142256054872", "data":""} from: 192.168.209.1:59773, cost: 17 ms, unacked: 0, total push: 1
+
+2020-05-22 08:11:33,483 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:11:33,483 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1148433883850
+
+2020-05-22 08:11:33,483 INFO send udp packet: 192.168.209.1,59773,1148433883850
+
+2020-05-22 08:11:33,485 INFO received ack: {"type": "push-ack", "lastRefTime":"1148433883850", "data":""} from: 192.168.209.1:59773, cost: 2 ms, unacked: 0, total push: 2
+
+2020-05-22 08:14:35,716 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:14:35,717 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1330667338228
+
+2020-05-22 08:14:35,717 INFO send udp packet: 192.168.209.1,59773,1330667338228
+
+2020-05-22 08:14:35,721 INFO received ack: {"type": "push-ack", "lastRefTime":"1330667338228", "data":""} from: 192.168.209.1:59773, cost: 4 ms, unacked: 0, total push: 3
+
+2020-05-22 08:14:57,896 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:14:57,896 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1352846997783
+
+2020-05-22 08:14:57,896 INFO send udp packet: 192.168.209.1,59773,1352846997783
+
+2020-05-22 08:14:57,898 INFO received ack: {"type": "push-ack", "lastRefTime":"1352846997783", "data":""} from: 192.168.209.1:59773, cost: 2 ms, unacked: 0, total push: 4
+
+2020-05-22 08:16:57,354 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:16:57,354 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1472305277053
+
+2020-05-22 08:16:57,354 INFO send udp packet: 192.168.209.1,59773,1472305277053
+
+2020-05-22 08:16:57,356 INFO received ack: {"type": "push-ack", "lastRefTime":"1472305277053", "data":""} from: 192.168.209.1:59773, cost: 2 ms, unacked: 0, total push: 5
+
+2020-05-22 08:17:02,330 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:17:02,330 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1477281694347
+
+2020-05-22 08:17:02,331 INFO send udp packet: 192.168.209.1,59773,1477281694347
+
+2020-05-22 08:17:02,333 INFO received ack: {"type": "push-ack", "lastRefTime":"1477281694347", "data":""} from: 192.168.209.1:59773, cost: 2 ms, unacked: 0, total push: 6
+
+2020-05-22 08:25:42,453 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:25:42,453 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1997403758527
+
+2020-05-22 08:25:42,453 INFO send udp packet: 192.168.209.1,59773,1997403758527
+
+2020-05-22 08:25:42,454 INFO received ack: {"type": "push-ack", "lastRefTime":"1997403758527", "data":""} from: 192.168.209.1:59773, cost: 1 ms, unacked: 0, total push: 7
+
+2020-05-22 08:25:44,563 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:25:44,564 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,1999514866423
+
+2020-05-22 08:25:44,564 INFO send udp packet: 192.168.209.1,59773,1999514866423
+
+2020-05-22 08:25:44,567 INFO received ack: {"type": "push-ack", "lastRefTime":"1999514866423", "data":""} from: 192.168.209.1:59773, cost: 3 ms, unacked: 0, total push: 8
+
+2020-05-22 08:51:22,744 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:51:22,744 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,3537695338107
+
+2020-05-22 08:51:22,744 INFO send udp packet: 192.168.209.1,59773,3537695338107
+
+2020-05-22 08:51:22,746 INFO received ack: {"type": "push-ack", "lastRefTime":"3537695338107", "data":""} from: 192.168.209.1:59773, cost: 2 ms, unacked: 0, total push: 9
+
+2020-05-22 08:51:31,415 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 08:51:31,416 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:59773, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,59773,3546366688467
+
+2020-05-22 08:51:31,416 INFO send udp packet: 192.168.209.1,59773,3546366688467
+
+2020-05-22 08:51:31,420 INFO received ack: {"type": "push-ack", "lastRefTime":"3546366688467", "data":""} from: 192.168.209.1:59773, cost: 4 ms, unacked: 0, total push: 10
+
+2020-05-22 19:10:13,366 INFO DEFAULT_GROUP@@gateway-api is changed, add it to push queue.
+
+2020-05-22 19:10:34,323 INFO DEFAULT_GROUP@@ums-service is changed, add it to push queue.
+
+2020-05-22 19:10:35,740 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 19:10:37,404 INFO DEFAULT_GROUP@@wms-service is changed, add it to push queue.
+
+2020-05-22 19:36:31,180 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 19:36:31,182 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:61555, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,61555,20498129616798
+
+2020-05-22 19:36:31,182 INFO send udp packet: 192.168.209.1,61555,20498129616798
+
+2020-05-22 19:36:31,198 INFO received ack: {"type": "push-ack", "lastRefTime":"20498129616798", "data":""} from: 192.168.209.1:61555, cost: 15 ms, unacked: 0, total push: 1
+
+2020-05-22 19:36:33,901 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 19:36:33,901 INFO serviceName: DEFAULT_GROUP@@pms-service changed, schedule push for: 192.168.209.1:61555, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,61555,20500850264722
+
+2020-05-22 19:36:33,901 INFO send udp packet: 192.168.209.1,61555,20500850264722
+
+2020-05-22 19:36:33,904 INFO received ack: {"type": "push-ack", "lastRefTime":"20500850264722", "data":""} from: 192.168.209.1:61555, cost: 3 ms, unacked: 0, total push: 2
+
+2020-05-22 22:03:58,727 INFO DEFAULT_GROUP@@gateway-api is changed, add it to push queue.
+
+2020-05-22 22:04:20,822 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
+2020-05-22 22:04:25,905 INFO DEFAULT_GROUP@@wms-service is changed, add it to push queue.
+
+2020-05-22 22:04:27,488 INFO DEFAULT_GROUP@@ums-service is changed, add it to push queue.
+
+2020-05-22 22:04:44,107 INFO DEFAULT_GROUP@@sms-service is changed, add it to push queue.
+
+2020-05-22 22:27:57,164 INFO DEFAULT_GROUP@@pms-service is changed, add it to push queue.
+
