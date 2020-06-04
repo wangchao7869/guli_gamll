@@ -21,9 +21,14 @@ public interface CategoryService extends IService<CategoryEntity> {
 
     /**
      * 根据父id查询分类
+     *
      * @param parentId -1：查询所有，0：查询一级节点
      * @return
      */
     List<CategoryEntity> queryCategory(Long parentId);
+
+    List<CategoryEntity> queryCategoriesWithSubByPid(Long parentId);
+
+    List<CategoryEntity> queryCategoriesByCid3(Long cid3);
 }
 

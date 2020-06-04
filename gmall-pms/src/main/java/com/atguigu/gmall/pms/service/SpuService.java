@@ -22,6 +22,7 @@ public interface SpuService extends IService<SpuEntity> {
 
     /**
      * 分页查询spu商品列表
+     *
      * @param pageParamVo
      * @param categoryId
      * @return
@@ -30,6 +31,7 @@ public interface SpuService extends IService<SpuEntity> {
 
     /**
      * 保存
+     *
      * @param spuVo
      */
     void bigSave(SpuVo spuVo);

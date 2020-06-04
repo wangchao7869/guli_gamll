@@ -1,0 +1,8 @@
+2020-06-03 14:27:20,555|192.168.76.1|gateway-api.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-06-03 14:27:33,926|192.168.76.1|pms-service.yaml|dev|72c9bc61-7818-4cce-8b86-4c7b0d0e4edd|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-06-03 14:27:42,868|192.168.76.1|sms-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-06-03 14:27:55,800|192.168.76.1|search-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-06-03 14:28:05,895|192.168.76.1|index-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-06-03 14:29:28,144|192.168.76.1|wms-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-06-03 14:31:48,607|192.168.76.1|index-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-06-03 19:25:56,112|192.168.76.1|index-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1

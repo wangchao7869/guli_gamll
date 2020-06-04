@@ -39,7 +39,7 @@ public class UserCollectShopController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryUserCollectShopByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryUserCollectShopByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = userCollectShopService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class UserCollectShopController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<UserCollectShopEntity> queryUserCollectShopById(@PathVariable("id") Long id){
-		UserCollectShopEntity userCollectShop = userCollectShopService.getById(id);
+    public ResponseVo<UserCollectShopEntity> queryUserCollectShopById(@PathVariable("id") Long id) {
+        UserCollectShopEntity userCollectShop = userCollectShopService.getById(id);
 
         return ResponseVo.ok(userCollectShop);
     }
@@ -62,8 +62,8 @@ public class UserCollectShopController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody UserCollectShopEntity userCollectShop){
-		userCollectShopService.save(userCollectShop);
+    public ResponseVo<Object> save(@RequestBody UserCollectShopEntity userCollectShop) {
+        userCollectShopService.save(userCollectShop);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class UserCollectShopController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody UserCollectShopEntity userCollectShop){
-		userCollectShopService.updateById(userCollectShop);
+    public ResponseVo update(@RequestBody UserCollectShopEntity userCollectShop) {
+        userCollectShopService.updateById(userCollectShop);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class UserCollectShopController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		userCollectShopService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        userCollectShopService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

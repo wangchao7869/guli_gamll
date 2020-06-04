@@ -1,0 +1,41 @@
+server:
+  port: 18086
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+  zipkin:
+    base-url: http://localhost:9411
+    discovery-client-enabled: false
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
+  elasticsearch:
+    rest:
+      uris: http://192.168.0.168:9200
+  rabbitmq:
+    host: 192.168.0.168
+    username: chao
+    password: chao
+    virtual-host: /chao
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
+  jackson:
+    default-property-inclusion: non_null # json序列化时不包含null字段
+  thymeleaf:
+    cache: false
+feign:
+  sentinel:
+    enabled: true
+logging:
+  level:
+    com.atguigu.gmall: debug

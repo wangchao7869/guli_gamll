@@ -39,7 +39,7 @@ public class UserCollectSkuController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryUserCollectSkuByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryUserCollectSkuByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = userCollectSkuService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class UserCollectSkuController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<UserCollectSkuEntity> queryUserCollectSkuById(@PathVariable("id") Long id){
-		UserCollectSkuEntity userCollectSku = userCollectSkuService.getById(id);
+    public ResponseVo<UserCollectSkuEntity> queryUserCollectSkuById(@PathVariable("id") Long id) {
+        UserCollectSkuEntity userCollectSku = userCollectSkuService.getById(id);
 
         return ResponseVo.ok(userCollectSku);
     }
@@ -62,8 +62,8 @@ public class UserCollectSkuController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody UserCollectSkuEntity userCollectSku){
-		userCollectSkuService.save(userCollectSku);
+    public ResponseVo<Object> save(@RequestBody UserCollectSkuEntity userCollectSku) {
+        userCollectSkuService.save(userCollectSku);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class UserCollectSkuController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody UserCollectSkuEntity userCollectSku){
-		userCollectSkuService.updateById(userCollectSku);
+    public ResponseVo update(@RequestBody UserCollectSkuEntity userCollectSku) {
+        userCollectSkuService.updateById(userCollectSku);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class UserCollectSkuController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		userCollectSkuService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        userCollectSkuService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

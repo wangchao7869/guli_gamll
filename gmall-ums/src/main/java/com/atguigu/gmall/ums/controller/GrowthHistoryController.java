@@ -39,7 +39,7 @@ public class GrowthHistoryController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryGrowthHistoryByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryGrowthHistoryByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = growthHistoryService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class GrowthHistoryController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<GrowthHistoryEntity> queryGrowthHistoryById(@PathVariable("id") Long id){
-		GrowthHistoryEntity growthHistory = growthHistoryService.getById(id);
+    public ResponseVo<GrowthHistoryEntity> queryGrowthHistoryById(@PathVariable("id") Long id) {
+        GrowthHistoryEntity growthHistory = growthHistoryService.getById(id);
 
         return ResponseVo.ok(growthHistory);
     }
@@ -62,8 +62,8 @@ public class GrowthHistoryController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody GrowthHistoryEntity growthHistory){
-		growthHistoryService.save(growthHistory);
+    public ResponseVo<Object> save(@RequestBody GrowthHistoryEntity growthHistory) {
+        growthHistoryService.save(growthHistory);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class GrowthHistoryController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody GrowthHistoryEntity growthHistory){
-		growthHistoryService.updateById(growthHistory);
+    public ResponseVo update(@RequestBody GrowthHistoryEntity growthHistory) {
+        growthHistoryService.updateById(growthHistory);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class GrowthHistoryController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		growthHistoryService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        growthHistoryService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

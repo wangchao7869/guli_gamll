@@ -39,7 +39,7 @@ public class UserStatisticsController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryUserStatisticsByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryUserStatisticsByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = userStatisticsService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class UserStatisticsController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<UserStatisticsEntity> queryUserStatisticsById(@PathVariable("id") Long id){
-		UserStatisticsEntity userStatistics = userStatisticsService.getById(id);
+    public ResponseVo<UserStatisticsEntity> queryUserStatisticsById(@PathVariable("id") Long id) {
+        UserStatisticsEntity userStatistics = userStatisticsService.getById(id);
 
         return ResponseVo.ok(userStatistics);
     }
@@ -62,8 +62,8 @@ public class UserStatisticsController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody UserStatisticsEntity userStatistics){
-		userStatisticsService.save(userStatistics);
+    public ResponseVo<Object> save(@RequestBody UserStatisticsEntity userStatistics) {
+        userStatisticsService.save(userStatistics);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class UserStatisticsController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody UserStatisticsEntity userStatistics){
-		userStatisticsService.updateById(userStatistics);
+    public ResponseVo update(@RequestBody UserStatisticsEntity userStatistics) {
+        userStatisticsService.updateById(userStatistics);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class UserStatisticsController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		userStatisticsService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        userStatisticsService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

@@ -17,7 +17,7 @@ public class SpuAttrValueVo extends SpuAttrValueEntity {
         if (CollectionUtils.isEmpty(valueSelected)) {
             return;
         }
-        this.setAttrValue(StringUtils.join(valueSelected,","));
+        this.setAttrValue(StringUtils.join(valueSelected, ","));
     }
 
 }

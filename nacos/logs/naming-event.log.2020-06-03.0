@@ -1,0 +1,60 @@
+2020-06-03 14:27:51,902 INFO DEFAULT_GROUP@@gateway-api {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 14:27:51,905 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway-api, ips: 192.168.76.1:8888_true,
+
+2020-06-03 14:27:51,907 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway-api, ips: 192.168.76.1:8888_true,
+
+2020-06-03 14:28:19,142 INFO DEFAULT_GROUP@@pms-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 14:28:19,142 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@pms-service, ips: 192.168.76.1:18081_true,
+
+2020-06-03 14:28:25,267 INFO DEFAULT_GROUP@@sms-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18084:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 14:28:25,267 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sms-service, ips: 192.168.76.1:18084_true,
+
+2020-06-03 14:28:25,267 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sms-service, ips: 192.168.76.1:18084_true,
+
+2020-06-03 14:28:32,945 INFO DEFAULT_GROUP@@index-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18087:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 14:28:32,945 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 192.168.76.1:18087_true,
+
+2020-06-03 14:28:32,955 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 192.168.76.1:18087_true,
+
+2020-06-03 14:29:26,089 INFO DEFAULT_GROUP@@search-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18086:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 14:29:26,089 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@search-service, ips: 192.168.76.1:18086_true,
+
+2020-06-03 14:29:26,092 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@search-service, ips: 192.168.76.1:18086_true,
+
+2020-06-03 14:29:48,116 INFO DEFAULT_GROUP@@wms-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18083:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 14:29:48,116 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@wms-service, ips: 192.168.76.1:18083_true,
+
+2020-06-03 14:29:48,120 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@wms-service, ips: 192.168.76.1:18083_true,
+
+2020-06-03 14:31:53,043 INFO {POS} {IP-DISABLED} valid: 192.168.76.1:18087@DEFAULT@DEFAULT_GROUP@@index-service, region: unknown, msg: client timeout after 15000, last beat: 1591165893311
+
+2020-06-03 14:32:04,980 INFO service: DEFAULT_GROUP@@index-service {POS} {IP-ENABLED} valid: 192.168.76.1:18087@DEFAULT, region: unknown, msg: client beat ok
+
+2020-06-03 14:32:04,982 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 192.168.76.1:18087_true,
+
+2020-06-03 18:59:11,542 INFO {POS} {IP-DISABLED} valid: 192.168.76.1:18087@DEFAULT@DEFAULT_GROUP@@index-service, region: unknown, msg: client timeout after 15000, last beat: 1591181936523
+
+2020-06-03 18:59:26,838 INFO DEFAULT_GROUP@@index-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.76.1:18087:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-06-03 18:59:26,838 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 
+
+2020-06-03 19:03:09,283 INFO DEFAULT_GROUP@@index-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18087:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 19:03:09,283 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 192.168.76.1:18087_true,
+
+2020-06-03 19:25:39,617 INFO DEFAULT_GROUP@@index-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.76.1:18087:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 19:25:39,617 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 
+
+2020-06-03 19:26:09,692 INFO DEFAULT_GROUP@@index-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18087:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-06-03 19:26:09,692 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 192.168.76.1:18087_true,
+
+2020-06-03 19:26:09,694 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@index-service, ips: 192.168.76.1:18087_true,
+

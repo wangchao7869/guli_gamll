@@ -39,7 +39,7 @@ public class PaymentInfoController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryPaymentInfoByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryPaymentInfoByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = paymentInfoService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class PaymentInfoController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<PaymentInfoEntity> queryPaymentInfoById(@PathVariable("id") Long id){
-		PaymentInfoEntity paymentInfo = paymentInfoService.getById(id);
+    public ResponseVo<PaymentInfoEntity> queryPaymentInfoById(@PathVariable("id") Long id) {
+        PaymentInfoEntity paymentInfo = paymentInfoService.getById(id);
 
         return ResponseVo.ok(paymentInfo);
     }
@@ -62,8 +62,8 @@ public class PaymentInfoController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody PaymentInfoEntity paymentInfo){
-		paymentInfoService.save(paymentInfo);
+    public ResponseVo<Object> save(@RequestBody PaymentInfoEntity paymentInfo) {
+        paymentInfoService.save(paymentInfo);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class PaymentInfoController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody PaymentInfoEntity paymentInfo){
-		paymentInfoService.updateById(paymentInfo);
+    public ResponseVo update(@RequestBody PaymentInfoEntity paymentInfo) {
+        paymentInfoService.updateById(paymentInfo);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class PaymentInfoController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		paymentInfoService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        paymentInfoService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

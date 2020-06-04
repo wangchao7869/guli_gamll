@@ -1,0 +1,18 @@
+2020-05-30 07:37:41,518 INFO DEFAULT_GROUP@@gateway-api {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-05-30 07:37:41,522 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway-api, ips: 192.168.76.1:8888_true,
+
+2020-05-30 07:37:41,539 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway-api, ips: 192.168.76.1:8888_true,
+
+2020-05-30 07:37:43,305 INFO DEFAULT_GROUP@@search-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.76.1:18086:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-05-30 07:37:43,305 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@search-service, ips: 192.168.76.1:18086_true,
+
+2020-05-30 07:41:13,354 INFO {POS} {IP-DISABLED} valid: 192.168.76.1:18086@DEFAULT@DEFAULT_GROUP@@search-service, region: unknown, msg: client timeout after 15000, last beat: 1590795653632
+
+2020-05-30 07:41:24,518 INFO service: DEFAULT_GROUP@@search-service {POS} {IP-ENABLED} valid: 192.168.76.1:18086@DEFAULT, region: unknown, msg: client beat ok
+
+2020-05-30 07:41:24,523 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@search-service, ips: 192.168.76.1:18086_true,
+
+2020-05-30 14:06:24,913 INFO {POS} {IP-DISABLED} valid: 192.168.76.1:8888@DEFAULT@DEFAULT_GROUP@@gateway-api, region: unknown, msg: client timeout after 15000, last beat: 1590818769691
+

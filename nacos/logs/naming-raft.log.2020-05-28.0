@@ -1,0 +1,80 @@
+2020-05-28 12:11:30,071 INFO initializing Raft sub-system
+
+2020-05-28 12:11:30,081 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2020-05-28 12:11:29,967 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:0","lastRefTime":0,"servePort":0,"site":"unknown","weight":1}]
+
+2020-05-28 12:11:30,084 INFO cache loaded, datum count: 0, current term: 0
+
+2020-05-28 12:11:30,084 INFO finish to load data from disk, cost: 4 ms.
+
+2020-05-28 12:11:30,086 INFO raft notifier started
+
+2020-05-28 12:11:30,087 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-05-28 12:11:30,090 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-28 12:11:32,052 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-05-28 12:11:32,064 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2020-05-28 12:11:34,954 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-28 12:11:34,954 INFO server list is updated, dead: 1, servers: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-28 12:11:34,967 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-28 12:11:35,095 INFO leader timeout, start voting,leader: {"heartbeatDueMs":5000,"ip":"192.168.76.1:8848","leaderDueMs":18067,"state":"FOLLOWER","term":0,"voteFor":""}, term: 0
+
+2020-05-28 12:11:37,964 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-28 12:15:25,062 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@gateway-api
+
+2020-05-28 12:15:57,477 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@pms-service
+
+2020-05-28 12:16:12,636 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@wms-service
+
+2020-05-28 12:16:17,965 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@search-service
+
+2020-05-28 12:36:50,244 INFO initializing Raft sub-system
+
+2020-05-28 12:36:50,245 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2020-05-28 12:36:50,251 INFO cache loaded, datum count: 0, current term: 0
+
+2020-05-28 12:36:50,251 INFO finish to load data from disk, cost: 7 ms.
+
+2020-05-28 12:36:50,255 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-05-28 12:36:50,078 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:0","lastRefTime":0,"servePort":0,"site":"unknown","weight":1}]
+
+2020-05-28 12:36:50,289 INFO raft notifier started
+
+2020-05-28 12:36:50,312 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-28 12:36:52,849 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-05-28 12:36:52,874 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2020-05-28 12:36:58,898 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@search-service
+
+2020-05-28 12:36:58,918 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@wms-service
+
+2020-05-28 12:36:58,934 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@gateway-api
+
+2020-05-28 12:36:58,941 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@pms-service
+
+2020-05-28 12:37:00,072 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-28 12:37:00,074 INFO server list is updated, dead: 1, servers: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-28 12:37:00,085 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-28 12:37:02,983 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.76.1","key":"192.168.76.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-28 13:42:46,463 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@ums-service
+
+2020-05-28 13:42:53,093 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@sms-service
+
+2020-05-28 13:42:55,191 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@oms-service
+

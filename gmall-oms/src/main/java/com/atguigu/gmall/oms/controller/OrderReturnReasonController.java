@@ -39,7 +39,7 @@ public class OrderReturnReasonController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryOrderReturnReasonByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryOrderReturnReasonByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = orderReturnReasonService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class OrderReturnReasonController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<OrderReturnReasonEntity> queryOrderReturnReasonById(@PathVariable("id") Long id){
-		OrderReturnReasonEntity orderReturnReason = orderReturnReasonService.getById(id);
+    public ResponseVo<OrderReturnReasonEntity> queryOrderReturnReasonById(@PathVariable("id") Long id) {
+        OrderReturnReasonEntity orderReturnReason = orderReturnReasonService.getById(id);
 
         return ResponseVo.ok(orderReturnReason);
     }
@@ -62,8 +62,8 @@ public class OrderReturnReasonController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody OrderReturnReasonEntity orderReturnReason){
-		orderReturnReasonService.save(orderReturnReason);
+    public ResponseVo<Object> save(@RequestBody OrderReturnReasonEntity orderReturnReason) {
+        orderReturnReasonService.save(orderReturnReason);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class OrderReturnReasonController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody OrderReturnReasonEntity orderReturnReason){
-		orderReturnReasonService.updateById(orderReturnReason);
+    public ResponseVo update(@RequestBody OrderReturnReasonEntity orderReturnReason) {
+        orderReturnReasonService.updateById(orderReturnReason);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class OrderReturnReasonController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		orderReturnReasonService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        orderReturnReasonService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

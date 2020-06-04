@@ -1,0 +1,22 @@
+2020-05-30 07:37:42,523 INFO DEFAULT_GROUP@@gateway-api is changed, add it to push queue.
+
+2020-05-30 07:37:44,308 INFO DEFAULT_GROUP@@search-service is changed, add it to push queue.
+
+2020-05-30 07:41:14,355 INFO DEFAULT_GROUP@@search-service is changed, add it to push queue.
+
+2020-05-30 07:41:14,356 INFO serviceName: DEFAULT_GROUP@@search-service changed, schedule push for: 192.168.209.1:52505, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,52505,3756354545900
+
+2020-05-30 07:41:14,356 INFO send udp packet: 192.168.209.1,52505,3756354545900
+
+2020-05-30 07:41:14,365 INFO received ack: {"type": "push-ack", "lastRefTime":"3756354545900", "data":""} from: 192.168.209.1:52505, cost: 9 ms, unacked: 0, total push: 1
+
+2020-05-30 07:41:25,521 INFO DEFAULT_GROUP@@search-service is changed, add it to push queue.
+
+2020-05-30 07:41:25,521 INFO serviceName: DEFAULT_GROUP@@search-service changed, schedule push for: 192.168.209.1:52505, agent: Nacos-Java-Client:v1.1.1, key: 192.168.209.1,52505,3767520169900
+
+2020-05-30 07:41:25,521 INFO send udp packet: 192.168.209.1,52505,3767520169900
+
+2020-05-30 07:41:25,523 INFO received ack: {"type": "push-ack", "lastRefTime":"3767520169900", "data":""} from: 192.168.209.1:52505, cost: 2 ms, unacked: 0, total push: 2
+
+2020-05-30 14:06:25,938 INFO DEFAULT_GROUP@@gateway-api is changed, add it to push queue.
+

@@ -39,7 +39,7 @@ public class UserController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryUserByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryUserByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = userService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class UserController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<UserEntity> queryUserById(@PathVariable("id") Long id){
-		UserEntity user = userService.getById(id);
+    public ResponseVo<UserEntity> queryUserById(@PathVariable("id") Long id) {
+        UserEntity user = userService.getById(id);
 
         return ResponseVo.ok(user);
     }
@@ -62,8 +62,8 @@ public class UserController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody UserEntity user){
-		userService.save(user);
+    public ResponseVo<Object> save(@RequestBody UserEntity user) {
+        userService.save(user);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class UserController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody UserEntity user){
-		userService.updateById(user);
+    public ResponseVo update(@RequestBody UserEntity user) {
+        userService.updateById(user);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class UserController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		userService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        userService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

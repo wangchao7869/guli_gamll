@@ -39,8 +39,20 @@ public class SpuController {
     @GetMapping("category/{categoryId}")
     public ResponseVo<PageResultVo> querySpuPageByCategoryId(
             PageParamVo pageParamVo,
-            @PathVariable("categoryId")Long categoryId) {
+            @PathVariable("categoryId") Long categoryId) {
         PageResultVo list = spuService.querySpuInfo(pageParamVo, categoryId);
+        return ResponseVo.ok(list);
+    }
+
+    /**
+     * 分页查询已上架SPU
+     * @param pageParamVo
+     * @return
+     */
+    @PostMapping("page")
+    public ResponseVo<List<SpuEntity>> querySpusByPage(@RequestBody PageParamVo pageParamVo) {
+        PageResultVo page = spuService.queryPage(pageParamVo);
+        List<SpuEntity> list = (List<SpuEntity>) page.getList();
         return ResponseVo.ok(list);
     }
 
@@ -49,7 +61,7 @@ public class SpuController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> querySpuByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> querySpuByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = spuService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -61,8 +73,8 @@ public class SpuController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<SpuEntity> querySpuById(@PathVariable("id") Long id){
-		SpuEntity spu = spuService.getById(id);
+    public ResponseVo<SpuEntity> querySpuById(@PathVariable("id") Long id) {
+        SpuEntity spu = spuService.getById(id);
 
         return ResponseVo.ok(spu);
     }
@@ -72,8 +84,8 @@ public class SpuController {
      */
     @PostMapping()
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody SpuVo spuVo){
-		spuService.bigSave(spuVo);
+    public ResponseVo<Object> save(@RequestBody SpuVo spuVo) {
+        spuService.bigSave(spuVo);
 
         return ResponseVo.ok();
     }
@@ -83,8 +95,8 @@ public class SpuController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody SpuEntity spu){
-		spuService.updateById(spu);
+    public ResponseVo update(@RequestBody SpuEntity spu) {
+        spuService.updateById(spu);
 
         return ResponseVo.ok();
     }
@@ -94,8 +106,8 @@ public class SpuController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		spuService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        spuService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

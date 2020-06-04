@@ -22,6 +22,7 @@ public interface AttrService extends IService<AttrEntity> {
 
     /**
      * 查询分类下的销售属性
+     *
      * @param cid
      * @param type
      * @param searchType

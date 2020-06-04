@@ -6,12 +6,12 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 商品spu积分设置
- * 
+ *
  * @author chao
  * @email c15071211749@163.com
  * @date 2020-05-22 22:05:26
  */
 @Mapper
 public interface SkuBoundsMapper extends BaseMapper<SkuBoundsEntity> {
-	
+
 }

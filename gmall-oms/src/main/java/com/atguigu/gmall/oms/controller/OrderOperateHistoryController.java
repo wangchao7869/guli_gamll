@@ -39,7 +39,7 @@ public class OrderOperateHistoryController {
      */
     @GetMapping
     @ApiOperation("分页查询")
-    public ResponseVo<PageResultVo> queryOrderOperateHistoryByPage(PageParamVo paramVo){
+    public ResponseVo<PageResultVo> queryOrderOperateHistoryByPage(PageParamVo paramVo) {
         PageResultVo pageResultVo = orderOperateHistoryService.queryPage(paramVo);
 
         return ResponseVo.ok(pageResultVo);
@@ -51,8 +51,8 @@ public class OrderOperateHistoryController {
      */
     @GetMapping("{id}")
     @ApiOperation("详情查询")
-    public ResponseVo<OrderOperateHistoryEntity> queryOrderOperateHistoryById(@PathVariable("id") Long id){
-		OrderOperateHistoryEntity orderOperateHistory = orderOperateHistoryService.getById(id);
+    public ResponseVo<OrderOperateHistoryEntity> queryOrderOperateHistoryById(@PathVariable("id") Long id) {
+        OrderOperateHistoryEntity orderOperateHistory = orderOperateHistoryService.getById(id);
 
         return ResponseVo.ok(orderOperateHistory);
     }
@@ -62,8 +62,8 @@ public class OrderOperateHistoryController {
      */
     @PostMapping
     @ApiOperation("保存")
-    public ResponseVo<Object> save(@RequestBody OrderOperateHistoryEntity orderOperateHistory){
-		orderOperateHistoryService.save(orderOperateHistory);
+    public ResponseVo<Object> save(@RequestBody OrderOperateHistoryEntity orderOperateHistory) {
+        orderOperateHistoryService.save(orderOperateHistory);
 
         return ResponseVo.ok();
     }
@@ -73,8 +73,8 @@ public class OrderOperateHistoryController {
      */
     @PostMapping("/update")
     @ApiOperation("修改")
-    public ResponseVo update(@RequestBody OrderOperateHistoryEntity orderOperateHistory){
-		orderOperateHistoryService.updateById(orderOperateHistory);
+    public ResponseVo update(@RequestBody OrderOperateHistoryEntity orderOperateHistory) {
+        orderOperateHistoryService.updateById(orderOperateHistory);
 
         return ResponseVo.ok();
     }
@@ -84,8 +84,8 @@ public class OrderOperateHistoryController {
      */
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public ResponseVo delete(@RequestBody List<Long> ids){
-		orderOperateHistoryService.removeByIds(ids);
+    public ResponseVo delete(@RequestBody List<Long> ids) {
+        orderOperateHistoryService.removeByIds(ids);
 
         return ResponseVo.ok();
     }

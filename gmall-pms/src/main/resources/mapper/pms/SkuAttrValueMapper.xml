@@ -2,4 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.gmall.pms.mapper.SkuAttrValueMapper">
 
+    <select id="querySearchAttrValueBySkuId" resultType="com.atguigu.gmall.pms.entity.SkuAttrValueEntity">
+    select a.id,a.attr_id,a.attr_name,a.attr_value,a.sku_id
+    from pms_sku_attr_value a INNER JOIN pms_attr b on a.attr_id=b.id
+    where a.sku_id=#{skuId} and b.search_type=1
+    </select>
+    <select id="querySaleAttrValuesBySpuId" resultType="com.atguigu.gmall.pms.entity.SkuAttrValueEntity">
+        SELECT a.* FROM pms_sku_attr_value a INNER JOIN pms_sku b on a.sku_id = b.id WHERE b.spu_id = #{spuId}
+    </select>
+    <select id="querySkuJsonsBySpuId" resultType="java.util.Map">
+        SELECT GROUP_CONCAT(a.attr_value) attr_values, a.sku_id FROM pms_sku_attr_value a INNER JOIN pms_sku b on a.sku_id = b.id WHERE b.spu_id = 7 GROUP BY a.sku_id
+    </select>
+    <select id="querySkuAttrValuesBySkuIdAndGId" resultType="com.atguigu.gmall.pms.entity.SkuAttrValueEntity">
+        SELECT b.* FROM pms_attr a INNER JOIN pms_sku_attr_value b ON a.id=b.attr_id WHERE b.sku_id = #{skuId} AND a.group_id = #{groupId};
+    </select>
 </mapper>
